@@ -1572,14 +1572,7 @@
                         form_name: 'book_consultation',
                     });
 
-                    const wrapper = document.createElement('div');
-                    wrapper.className = 'form-success';
-                    wrapper.innerHTML = `
-                        <div class="check" aria-hidden="true">✓</div>
-                        <h3>Got it.</h3>
-                        <p>We'll reach out within 24 hours with a quote and an artist match.</p>
-                    `;
-                    form.replaceWith(wrapper);
+                    window.location.href = 'thank-you.html';
                 } catch {
                     btn.disabled = false;
                     btn.textContent = 'Send it →';

@@ -1,0 +1,130 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-05-08 12:00:00",
+  "containerVersion": {
+    "path": "accounts/0/containers/0/versions/0",
+    "accountId": "0",
+    "containerId": "0",
+    "containerVersionId": "0",
+    "container": {
+      "path": "accounts/0/containers/0",
+      "accountId": "0",
+      "containerId": "0",
+      "name": "Charlotte Tattoo Ink",
+      "publicId": "GTM-WPH44PNC",
+      "usageContext": ["WEB"]
+    },
+    "tag": [
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "1",
+        "name": "GA4 — Configuration",
+        "type": "gaawc",
+        "parameter": [
+          {
+            "type": "boolean",
+            "key": "sendPageView",
+            "value": "true"
+          },
+          {
+            "type": "template",
+            "key": "measurementId",
+            "value": "G-Z27FYGVZWD"
+          }
+        ],
+        "firingTriggerId": ["2147479553"],
+        "tagFiringOption": "oncePerEvent"
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "2",
+        "name": "GA4 — Event: generate_lead",
+        "type": "gaawe",
+        "parameter": [
+          {
+            "type": "template",
+            "key": "eventName",
+            "value": "generate_lead"
+          },
+          {
+            "type": "tagReference",
+            "key": "measurementId",
+            "value": "GA4 — Configuration"
+          }
+        ],
+        "firingTriggerId": ["10"],
+        "tagFiringOption": "oncePerEvent"
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "3",
+        "name": "Meta Pixel — Base Code",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "template",
+            "key": "html",
+            "value": "<script>\n!function(f,b,e,v,n,t,s)\n{if(f.fbq)return;n=f.fbq=function(){n.callMethod?\nn.callMethod.apply(n,arguments):n.queue.push(arguments)};\nif(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';\nn.queue=[];t=b.createElement(e);t.async=!0;\nt.src=v;s=b.getElementsByTagName(e)[0];\ns.parentNode.insertBefore(t,s)}(window,document,'script',\n'https://connect.facebook.net/en_US/fbevents.js');\nfbq('init', '1490716562592398');\nfbq('track', 'PageView');\n</script>\n<noscript>\n<img height=\"1\" width=\"1\" style=\"display:none\"\nsrc=\"https://www.facebook.com/tr?id=1490716562592398&ev=PageView&noscript=1\"/>\n</noscript>"
+          },
+          {
+            "type": "boolean",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": ["2147479553"],
+        "tagFiringOption": "oncePerEvent"
+      },
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "tagId": "4",
+        "name": "Meta Pixel — Lead",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "template",
+            "key": "html",
+            "value": "<script>\nfbq('track', 'Lead');\n</script>"
+          },
+          {
+            "type": "boolean",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "firingTriggerId": ["10"],
+        "tagFiringOption": "oncePerEvent"
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "0",
+        "containerId": "0",
+        "triggerId": "10",
+        "name": "Custom Event — form_submission",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "template",
+                "key": "arg0",
+                "value": "{{_event}}"
+              },
+              {
+                "type": "template",
+                "key": "arg1",
+                "value": "form_submission"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
