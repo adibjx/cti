@@ -28,8 +28,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400;500;600;700&display=swap" /></noscript>
 
     <style>
         /* ---------- RESET ---------- */
@@ -1166,7 +1166,9 @@
         <!-- ===================== HERO ===================== -->
         <section class="hero">
             <picture>
+                <source media="(min-width: 720px)" type="image/webp" srcset="media/hero/desktop.webp">
                 <source media="(min-width: 720px)" srcset="media/hero/desktop.png">
+                <source type="image/webp" srcset="media/hero/mobile.webp">
                 <img class="hero-bg" src="media/hero/mobile.png" alt="" fetchpriority="high" decoding="sync" aria-hidden="true">
             </picture>
             <div class="hero-overlay" aria-hidden="true"></div>
