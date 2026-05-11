@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WPH44PNC');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Book a Tattoo Consultation — Charlotte Tattoo Ink</title>
+    <meta name="description" content="Book your free tattoo consultation at Charlotte Tattoo Ink. We reply within 24 hours with a quote and a matched artist." />
+    <link rel="icon" href="media/favicon.png" />
+    <link rel="canonical" href="https://charlottetattooink.com/book-now" />
+
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Book a Tattoo Consultation — Charlotte Tattoo Ink" />
+    <meta property="og:description" content="Book your free tattoo consultation at Charlotte Tattoo Ink. We reply within 24 hours." />
+    <meta property="og:url"         content="https://charlottetattooink.com/book-now" />
+    <meta name="twitter:card"       content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400;500;600;700&display=swap" /></noscript>
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        ::selection { background: var(--crimson); color: var(--white); }
+
+        :root {
+            --black:   #0D0D0D;
+            --carbon:  #2B2B2B;
+            --crimson: #E23D28;
+            --bone:    #E8E4DF;
+            --white:   #FAFAFA;
+            --display: 'Anton', Impact, sans-serif;
+            --body:    'Quicksand', system-ui, sans-serif;
+            --max:     1320px;
+            --ease:    cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+        body {
+            background: var(--black);
+            color: var(--bone);
+            font-family: var(--body);
+            font-weight: 400;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img, svg { max-width: 100%; display: block; }
+        a { color: inherit; text-decoration: none; }
+        button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+        input, textarea, select { font: inherit; }
+
+        .grain {
+            position: fixed; inset: 0; pointer-events: none; z-index: 1000;
+            opacity: 0.07; mix-blend-mode: overlay;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--display); font-weight: 400;
+            text-transform: uppercase; letter-spacing: 0.005em;
+            line-height: 0.92; color: var(--white);
+        }
+
+        .eyebrow {
+            font-family: var(--body); font-weight: 600; font-size: 0.7rem;
+            letter-spacing: 0.32em; text-transform: uppercase; color: var(--crimson);
+            margin-bottom: 1.25rem; display: inline-flex; align-items: center; gap: 0.7rem;
+        }
+        .eyebrow::before { content: ''; width: 1.5rem; height: 1px; background: var(--crimson); }
+        .accent { color: var(--crimson); }
+
+        .container { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+
+        /* NAV */
+        .nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 60;
+            padding: 0.85rem 0;
+            background: rgba(13,13,13,0.85);
+            backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(232,228,223,0.06);
+        }
+        .nav-inner { display: flex; align-items: center; justify-content: center; gap: 1rem; position: relative; }
+        .logo { display: flex; align-items: center; gap: 0.6rem; }
+        .logo img { height: 34px; width: auto; }
+
+        /* MAIN */
+        .book-wrap {
+            min-height: 100vh;
+            padding: 7rem 0 4rem;
+            background: var(--carbon);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .book-wrap::before {
+            content: '';
+            position: absolute; top: 0; left: 0; width: 100%; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--crimson), transparent);
+            opacity: 0.5;
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+
+        .book-pitch h1 { font-size: clamp(3rem, 12vw, 6.5rem); margin-bottom: 1.5rem; }
+        .book-pitch h1 span { display: block; }
+        .book-pitch p { color: rgba(232,228,223,0.7); max-width: 32ch; font-size: 1rem; margin-bottom: 0.65rem; }
+
+        .process-steps {
+            list-style: none;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .process-steps li {
+            display: flex; align-items: flex-start; gap: 0.85rem;
+            font-size: 0.9rem; color: rgba(232,228,223,0.7);
+        }
+        .process-steps li .num {
+            font-family: var(--display); color: var(--crimson);
+            font-size: 1rem; flex-shrink: 0; padding-top: 0.1rem;
+        }
+
+        /* FORM */
+        .book-form {
+            display: grid; gap: 1.1rem;
+            background: var(--black);
+            padding: 1.75rem 1.5rem;
+            border: 1px solid rgba(232,228,223,0.08);
+        }
+        .book-form .field { display: flex; flex-direction: column; gap: 0.4rem; }
+        .book-form label {
+            font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase;
+            color: rgba(232,228,223,0.55); font-weight: 600;
+        }
+        .book-form input, .book-form textarea {
+            background: transparent; border: none;
+            border-bottom: 1px solid rgba(232,228,223,0.18);
+            color: var(--bone); font-family: var(--body); font-size: 1rem;
+            padding: 0.7rem 0; outline: none;
+            transition: border-color 0.2s var(--ease); border-radius: 0;
+        }
+        .book-form input:focus, .book-form textarea:focus { border-bottom-color: var(--crimson); }
+        .book-form input:invalid:not(:placeholder-shown) { border-bottom-color: rgba(226,61,40,0.6); }
+        .book-form textarea { resize: vertical; min-height: 110px; line-height: 1.5; }
+        .book-form button[type="submit"] { margin-top: 0.5rem; justify-content: center; }
+
+        .btn {
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            padding: 1.05rem 1.6rem; font-family: var(--body); font-weight: 700;
+            font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase;
+            border-radius: 2px; border: 1px solid transparent;
+            transition: all 0.25s var(--ease); cursor: pointer; width: 100%;
+        }
+        .btn-primary { background: var(--crimson); color: var(--white); }
+        .btn-primary:hover { background: var(--white); color: var(--black); transform: translateY(-2px); box-shadow: 0 14px 36px rgba(226,61,40,0.25); }
+        .btn-lg { padding: 1.25rem 2.2rem; font-size: 0.88rem; }
+
+        .form-note {
+            font-size: 0.7rem; color: rgba(232,228,223,0.45);
+            text-align: center; letter-spacing: 0.05em;
+        }
+
+        /* FLOAT CTA */
+        .float-cta {
+            position: fixed; bottom: 1.1rem; right: 1.1rem; z-index: 70;
+            background: var(--crimson); color: var(--white);
+            padding: 1rem 1.4rem; border-radius: 999px;
+            font-weight: 700; font-size: 0.72rem; letter-spacing: 0.22em;
+            text-transform: uppercase;
+            box-shadow: 0 12px 38px rgba(226,61,40,0.45), 0 2px 8px rgba(0,0,0,0.4);
+            display: inline-flex; align-items: center; gap: 0.55rem;
+            transition: box-shadow 0.25s var(--ease), transform 0.25s var(--ease);
+        }
+        .float-cta:hover { box-shadow: 0 16px 48px rgba(226,61,40,0.6); transform: translateY(-3px); }
+        .float-cta .dot {
+            width: 6px; height: 6px; background: var(--white);
+            border-radius: 50%; animation: blink 1.6s ease infinite;
+        }
+        @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+        /* FOOTER */
+        footer {
+            padding: 2.5rem 0 6rem; background: var(--black);
+            border-top: 1px solid rgba(232,228,223,0.06);
+            text-align: center; font-size: 0.75rem;
+            color: rgba(232,228,223,0.4); letter-spacing: 0.1em;
+        }
+        footer .foot-mark {
+            font-family: var(--display); font-size: 0.95rem; color: var(--bone);
+            letter-spacing: 0.08em; margin-bottom: 0.5rem; text-transform: uppercase;
+        }
+
+        @media (min-width: 720px) {
+            .container { padding: 0 2rem; }
+            .book-wrap { padding: 9rem 0 6rem; }
+            .book-grid { grid-template-columns: 1fr 1.1fr; gap: 5rem; align-items: start; }
+            .book-form { padding: 2.25rem 2rem; }
+            .float-cta { bottom: 1.5rem; right: 1.5rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPH44PNC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="/" class="logo" aria-label="Charlotte Tattoo Ink — home">
+                <img src="media/logo-horizontal.png" alt="Charlotte Tattoo Ink" />
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="book-wrap" id="book">
+            <div class="container book-grid">
+                <div class="book-pitch">
+                    <p class="eyebrow">Ready?</p>
+                    <h1><span>Tell us</span><span>what you</span><span class="accent">want.</span></h1>
+                    <p>We reply within 24 hours with a quote and a matched artist. Whether you have a finished idea or just a vibe — start here.</p>
+
+                    <ul class="process-steps">
+                        <li><span class="num">01</span><span>Free 20-min consultation — no pressure, no upsell.</span></li>
+                        <li><span class="num">02</span><span>Custom design with unlimited revisions before any needle touches skin.</span></li>
+                        <li><span class="num">03</span><span>Private booth, sterile equipment, breaks whenever you need.</span></li>
+                        <li><span class="num">04</span><span>30 days of aftercare support direct from your artist.</span></li>
+                    </ul>
+                </div>
+
+                <form class="book-form" id="book-form" novalidate>
+                    <div class="field">
+                        <label for="f-name">Name</label>
+                        <input type="text" id="f-name" name="name" autocomplete="name" required placeholder="Your full name" />
+                    </div>
+                    <div class="field">
+                        <label for="f-email">Email</label>
+                        <input type="email" id="f-email" name="email" autocomplete="email" required placeholder="you@email.com" />
+                    </div>
+                    <div class="field">
+                        <label for="f-phone">Phone</label>
+                        <input type="tel" id="f-phone" name="phone" autocomplete="tel" required placeholder="(704) 000-0000" />
+                    </div>
+                    <div class="field">
+                        <label for="f-desc">What you have in mind</label>
+                        <textarea id="f-desc" name="description" rows="5" required placeholder="Style, size, placement, references, timeline..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Send it →</button>
+                    <p class="form-note">No spam. We reply within 24 hours.</p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="foot-mark">Charlotte Tattoo Ink</div>
+            <p>© 2026 · 1819 Sardis Rd N, Suite 320 · Charlotte, NC 28270 · <a href="privacy.html" style="color:inherit;opacity:0.6;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <a href="#book" class="float-cta" aria-label="Book a consultation">
+        <span class="dot" aria-hidden="true"></span>
+        Book Now
+    </a>
+
+    <script>
+        (function () {
+            'use strict';
+
+            function getUtms() {
+                const p = new URLSearchParams(window.location.search);
+                return {
+                    utm_source:   p.get('utm_source')   || '',
+                    utm_medium:   p.get('utm_medium')   || '',
+                    utm_campaign: p.get('utm_campaign') || '',
+                    utm_term:     p.get('utm_term')     || '',
+                    utm_content:  p.get('utm_content')  || '',
+                };
+            }
+
+            const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwQHHV0XKU3noZ0HNLR0GbEmrfYMuJ0JCqnFDWJHPBa7A7GtotKva-idDMg7Gu6NQyd/exec';
+
+            const form = document.getElementById('book-form');
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                if (!form.checkValidity()) { form.reportValidity(); return; }
+
+                const btn = form.querySelector('button[type="submit"]');
+                btn.disabled = true;
+                btn.textContent = 'Sending…';
+
+                const raw = Object.fromEntries(new FormData(form));
+                const payload = {
+                    timestamp:   new Date().toISOString(),
+                    full_name:   raw.name        || '',
+                    email:       raw.email       || '',
+                    phone:       raw.phone       || '',
+                    description: raw.description || '',
+                    ...getUtms(),
+                };
+
+                try {
+                    await fetch(SHEET_URL, { method: 'POST', mode: 'no-cors', body: JSON.stringify(payload) });
+
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({ event: 'form_submission', form_name: 'book_consultation' });
+
+                    window.location.href = 'thank-you.html';
+                } catch {
+                    btn.disabled = false;
+                    btn.textContent = 'Send it →';
+                    alert('Something went wrong. Please try again or contact us directly.');
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>

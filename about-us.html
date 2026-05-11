@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WPH44PNC');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>About Us — Charlotte Tattoo Ink</title>
+    <meta name="description" content="Meet the team behind Charlotte's award-winning tattoo studio. Six artists, every style done right. Learn our story." />
+    <link rel="icon" href="media/favicon.png" />
+    <link rel="canonical" href="https://charlottetattooink.com/about-us" />
+
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="About Us — Charlotte Tattoo Ink" />
+    <meta property="og:description" content="Meet the team behind Charlotte's award-winning tattoo studio." />
+    <meta property="og:url"         content="https://charlottetattooink.com/about-us" />
+    <meta name="twitter:card"       content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400;500;600;700&display=swap" /></noscript>
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        ::selection { background: var(--crimson); color: var(--white); }
+
+        :root {
+            --black:   #0D0D0D;
+            --carbon:  #2B2B2B;
+            --crimson: #E23D28;
+            --bone:    #E8E4DF;
+            --white:   #FAFAFA;
+            --display: 'Anton', Impact, sans-serif;
+            --body:    'Quicksand', system-ui, sans-serif;
+            --max:     1320px;
+            --ease:    cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+        body {
+            background: var(--black);
+            color: var(--bone);
+            font-family: var(--body);
+            font-weight: 400;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img, svg { max-width: 100%; display: block; }
+        a { color: inherit; text-decoration: none; }
+        button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+
+        .grain {
+            position: fixed; inset: 0; pointer-events: none; z-index: 1000;
+            opacity: 0.07; mix-blend-mode: overlay;
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--display);
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.005em;
+            line-height: 0.92;
+            color: var(--white);
+        }
+
+        .eyebrow {
+            font-family: var(--body); font-weight: 600; font-size: 0.7rem;
+            letter-spacing: 0.32em; text-transform: uppercase; color: var(--crimson);
+            margin-bottom: 1.25rem; display: inline-flex; align-items: center; gap: 0.7rem;
+        }
+        .eyebrow::before { content: ''; width: 1.5rem; height: 1px; background: var(--crimson); }
+
+        .accent { color: var(--crimson); }
+
+        .container { max-width: var(--max); margin: 0 auto; padding: 0 1.25rem; }
+
+        /* NAV */
+        .nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 60;
+            padding: 0.85rem 0;
+            background: rgba(13,13,13,0.85);
+            backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(232,228,223,0.06);
+        }
+        .nav-inner { display: flex; align-items: center; justify-content: center; gap: 1rem; position: relative; }
+        .logo { display: flex; align-items: center; gap: 0.6rem; }
+        .logo img { height: 34px; width: auto; }
+        .nav-cta {
+            font-family: var(--body); font-size: 0.72rem; font-weight: 700;
+            letter-spacing: 0.22em; text-transform: uppercase;
+            padding: 0.7rem 1.15rem; border: 1px solid rgba(232,228,223,0.35);
+            border-radius: 999px; transition: all 0.25s var(--ease);
+            white-space: nowrap; position: absolute; right: 1.25rem;
+        }
+        .nav-cta:hover { background: var(--crimson); border-color: var(--crimson); color: var(--white); }
+
+        /* PAGE HERO */
+        .page-hero {
+            padding: 9rem 0 4rem;
+            background: var(--black);
+            border-bottom: 1px solid rgba(232,228,223,0.06);
+        }
+        .page-hero h1 { font-size: clamp(3rem, 10vw, 7rem); margin-bottom: 1rem; }
+        .page-hero p { font-size: 1.05rem; color: rgba(232,228,223,0.7); max-width: 50ch; line-height: 1.55; }
+
+        /* SECTIONS */
+        section { padding: 5rem 0; position: relative; }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+
+        .about-text h2 { font-size: clamp(2rem, 6vw, 3.5rem); margin-bottom: 1.25rem; }
+        .about-text p {
+            font-size: 1rem; color: rgba(232,228,223,0.72);
+            max-width: 55ch; line-height: 1.65; margin-bottom: 1rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .value-card {
+            padding: 1.5rem;
+            border: 1px solid rgba(232,228,223,0.08);
+            background: var(--carbon);
+        }
+        .value-card h3 { font-size: 1.25rem; margin-bottom: 0.6rem; }
+        .value-card p { font-size: 0.9rem; color: rgba(232,228,223,0.65); line-height: 1.55; }
+
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            padding: 3rem 0;
+            border-top: 1px solid rgba(232,228,223,0.08);
+            border-bottom: 1px solid rgba(232,228,223,0.08);
+            margin: 3rem 0;
+        }
+
+        .stat-item { padding-left: 1rem; border-left: 1px solid rgba(232,228,223,0.12); }
+        .stat-item .big {
+            font-family: var(--display); font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--white); line-height: 1; display: block;
+        }
+        .stat-item .label {
+            font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+            color: rgba(232,228,223,0.55); font-weight: 500;
+        }
+
+        /* CTA SECTION */
+        .cta-section {
+            background: var(--carbon);
+            text-align: center;
+            border-top: 1px solid rgba(232,228,223,0.06);
+        }
+        .cta-section h2 { font-size: clamp(2.5rem, 8vw, 5rem); margin-bottom: 1.5rem; }
+        .cta-section p { color: rgba(232,228,223,0.65); max-width: 40ch; margin: 0 auto 2rem; }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            padding: 1.05rem 1.6rem; font-family: var(--body); font-weight: 700;
+            font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase;
+            border-radius: 2px; border: 1px solid transparent;
+            transition: all 0.25s var(--ease); cursor: pointer;
+        }
+        .btn-primary { background: var(--crimson); color: var(--white); }
+        .btn-primary:hover { background: var(--white); color: var(--black); transform: translateY(-2px); box-shadow: 0 14px 36px rgba(226,61,40,0.25); }
+        .btn-lg { padding: 1.25rem 2.2rem; font-size: 0.88rem; }
+
+        /* FLOAT CTA */
+        .float-cta {
+            position: fixed; bottom: 1.1rem; right: 1.1rem; z-index: 70;
+            background: var(--crimson); color: var(--white);
+            padding: 1rem 1.4rem; border-radius: 999px;
+            font-weight: 700; font-size: 0.72rem; letter-spacing: 0.22em;
+            text-transform: uppercase;
+            box-shadow: 0 12px 38px rgba(226,61,40,0.45), 0 2px 8px rgba(0,0,0,0.4);
+            display: inline-flex; align-items: center; gap: 0.55rem;
+            transition: box-shadow 0.25s var(--ease), transform 0.25s var(--ease);
+        }
+        .float-cta:hover { box-shadow: 0 16px 48px rgba(226,61,40,0.6); transform: translateY(-3px); }
+        .float-cta .dot {
+            width: 6px; height: 6px; background: var(--white);
+            border-radius: 50%; animation: blink 1.6s ease infinite;
+        }
+        @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+        /* FOOTER */
+        footer {
+            padding: 2.5rem 0 6rem; background: var(--black);
+            border-top: 1px solid rgba(232,228,223,0.06);
+            text-align: center; font-size: 0.75rem;
+            color: rgba(232,228,223,0.4); letter-spacing: 0.1em;
+        }
+        footer .foot-mark {
+            font-family: var(--display); font-size: 0.95rem; color: var(--bone);
+            letter-spacing: 0.08em; margin-bottom: 0.5rem; text-transform: uppercase;
+        }
+
+        @media (min-width: 720px) {
+            .container { padding: 0 2rem; }
+            section { padding: 7rem 0; }
+            .about-grid { grid-template-columns: 1fr 1fr; align-items: start; gap: 5rem; }
+            .stat-row { grid-template-columns: repeat(4, 1fr); }
+            .values-grid { grid-template-columns: repeat(2, 1fr); }
+            .float-cta { bottom: 1.5rem; right: 1.5rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPH44PNC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="/" class="logo" aria-label="Charlotte Tattoo Ink — home">
+                <img src="media/logo-horizontal.png" alt="Charlotte Tattoo Ink" />
+            </a>
+            <a href="index.html#book" class="nav-cta">Book</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-hero">
+            <div class="container">
+                <p class="eyebrow">Who we are</p>
+                <h1>About<br /><span class="accent">Us.</span></h1>
+                <p>Charlotte's award-winning tattoo studio — where every piece is built to last a lifetime.</p>
+            </div>
+        </div>
+
+        <section style="background: var(--black);">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="eyebrow">Our story</p>
+                        <h2>Built in<br />Charlotte.</h2>
+                        <p>Charlotte Tattoo Ink was born from a simple idea: Charlotte deserves a studio where craft comes first. No flash-sale walk-ins, no rushed appointments — just six dedicated artists who take pride in every line they put down.</p>
+                        <p>We specialize in micro-realism, anime, new school, color work, floral, and pet portraits. Whatever style you're after, we have an artist who lives and breathes it.</p>
+                    </div>
+                    <div class="about-text">
+                        <p class="eyebrow">Our promise</p>
+                        <h2>Tattoos you'll<br />wear<br /><span class="accent">forever.</span></h2>
+                        <p>Every consultation is free. Every design gets unlimited revisions before the needle touches skin. And every tattoo comes with 30 days of direct aftercare support — because your ink is our portfolio.</p>
+                    </div>
+                </div>
+
+                <div class="stat-row">
+                    <div class="stat-item"><span class="big">5.0</span><span class="label">Google rating</span></div>
+                    <div class="stat-item"><span class="big">6</span><span class="label">Award-winning artists</span></div>
+                    <div class="stat-item"><span class="big">5,000+</span><span class="label">Happy customers</span></div>
+                    <div class="stat-item"><span class="big">30+ yrs</span><span class="label">Combined experience</span></div>
+                </div>
+
+                <div class="values-grid">
+                    <div class="value-card">
+                        <h3>Custom-first</h3>
+                        <p>We don't do copy-paste tattoos. Every piece is drawn from scratch for you — adapted to your body, your style, and how it'll age.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Safety always</h3>
+                        <p>Single-use sterilized equipment, private booths, and a studio cleaned to medical standards. No shortcuts.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Honest pricing</h3>
+                        <p>Flat quotes at consultation. You'll know the full cost before any commitment — never an open-ended hourly surprise.</p>
+                    </div>
+                    <div class="value-card">
+                        <h3>Aftercare support</h3>
+                        <p>30 days of direct contact with your artist after the session. We want your tattoo to heal perfectly and age beautifully.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <p class="eyebrow">Ready to start?</p>
+                <h2>Let's make<br /><span class="accent">your tattoo.</span></h2>
+                <p>Free consultation. We reply within 24 hours with a quote and a matched artist.</p>
+                <a href="index.html#book" class="btn btn-primary btn-lg">Book a consultation →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="foot-mark">Charlotte Tattoo Ink</div>
+            <p>© 2026 · 1819 Sardis Rd N, Suite 320 · Charlotte, NC 28270 · <a href="privacy.html" style="color:inherit;opacity:0.6;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <a href="index.html#book" class="float-cta" aria-label="Book a consultation">
+        <span class="dot" aria-hidden="true"></span>
+        Book Now
+    </a>
+</body>
+
+</html>
